@@ -6,7 +6,8 @@ import { verifyCheckboxCheckedByLabel, verifyCheckboxNotCheckedByLabel } from ".
 describe('Checkbox helper function test', () => {
     it('checks hammer and mightycraft hardeware boxes, asserts Screwdriver is not checked', () => {
       cy.visit('/');
-      cy.get('img[alt="Screwdriver"]').should('not.exist'); // Vewrify that one of the images shown by default - screwdriver - exist when first visitng the site prior to performing the check box action
+      // Verify that one of the images shown by default - screwdriver - exist when first visitng the site prior to performing the check box action
+      cy.get('img[alt="Screwdriver"]').should('not.exist'); 
       // Check boxes besides ONLY hammer and MightyCraft Hardware to search for only hammer tools
       // The function selects the Hammer and MightyCraft Hardware boxes, and Asserts that Claw Hammer is the only tool showing, and screwdriver no longer is shown on screen
       verifyCheckboxCheckedByLabel('Hammer');
