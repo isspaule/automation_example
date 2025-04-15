@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 ///describe('Dispaly Drill using Search box', () => {
-describe('Seach box helper function test', () => {
+describe('Seach box test', () => {
     it('Search for drills, verify only drill images shown and not others', () => {
       cy.visit('/');
       // Verify that one of the images shown by default - bolt cutters - exist when first visitng the site prior to performing the search
